@@ -27,3 +27,9 @@ jobs:
         run: |
           echo "Have a nice day"
           echo "Good luck"
+
+      # 참고: https://docs.github.com/en/actions/learn-github-actions/variables
+      - name: Github Actions 자체에 저장되어 있는 변수 사용해보기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
